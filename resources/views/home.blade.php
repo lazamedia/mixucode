@@ -2,7 +2,7 @@
 
 @section('container')
 
-<link rel="stylesheet" href="{{ asset ('css/home.css') }}">
+
 
 <style>
 </style>
