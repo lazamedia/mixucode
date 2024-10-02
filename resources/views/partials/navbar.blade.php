@@ -51,20 +51,20 @@
                     <a class="nav-link {{ ($active === 'home') ? 'active' : '' }}" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === 'profile') ? 'active' : '' }}" href="/profile">Profile</a>
+                    <a class="nav-link {{ ($active === 'faq') ? 'active' : '' }}" href="/faq">Faq</a>
                 </li>
                                
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === 'anggota') ? 'active' : '' }}" href="/anggota">Anggota</a>
+                    <a class="nav-link {{ ($active === 'project') ? 'active' : '' }}" href="/project">Project</a>
                 </li>
 
                 @if (auth()->check() && auth()->user()->hasRole('admin'))
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === 'pengurus') ? 'active' : '' }}" href="/datamahasiswa">Pengurus</a>
+                    <a class="nav-link {{ ($active === 'pengurus') ? 'active' : '' }}" href="/">Admin</a>
                 </li>
                 @endif
                 <li class="nav-item">
-                    <a class="nav-link {{ ($active === 'artikel') ? 'active' : '' }}" href="/artikel">Artikel</a>
+                    <a class="nav-link {{ ($active === 'partner') ? 'active' : '' }}" href="/partner">Partner</a>
                 </li>  
                   
                 <li class="nav-item">
@@ -73,13 +73,13 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Event
+                        Info
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/project">Semua Event</a></li>
-                        <li><a class="dropdown-item" href="/contact">Makesta</a></li>
+                        <li><a class="dropdown-item" href="/portofolio">Portofolio</a></li>
+                        <li><a class="dropdown-item" href="/klien">Klien Kami</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="/posts">Colaborasi</a></li>
+                        <li><a class="dropdown-item" href="/contact">Contact</a></li>
                     </ul>
                 </li>   
             </ul>

@@ -1,0 +1,139 @@
+body {
+    font-family: 'poppins' sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+h1, h2 {
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+ 
+    flex: 1;
+    margin: 10px; 
+}
+
+.form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-info {
+    max-width: 48%;
+}
+
+.form-box {
+    max-width: 48%;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.smaller-box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.info-box.smaller {
+    flex: 1;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #333;
+}
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-box label {
+    margin: 10px 0 5px;
+}
+
+.form-box input, .form-box textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box button {
+    padding: 10px;
+    background-color: rgb(162, 34, 130);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #00cb9f;
+}
+
+.map {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.social-media {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-media .icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+social-media .icons a:hover {
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .contact-info, .form-box {
+        max-width: 100%;
+    }
+
+    .smaller-box-container {
+        flex-direction: column;
+    }
+
+    .info-box.smaller {
+        margin-bottom: 20px;
+    }
+
+    
+}

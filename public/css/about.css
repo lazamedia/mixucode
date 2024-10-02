@@ -1,0 +1,73 @@
+body {
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.judulpost {
+    width: 100%;
+    border-bottom: 1px solid #797b7c;
+    text-align: center;
+    margin: 20px;
+}
+.text1 {
+    font-size: 21pt;
+    font-weight: 500;
+}
+.postt {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.boxpost {
+    border-radius: 9px;
+    border: 1px solid #bbbbbb;
+    padding: 20px;
+    width: 300px;
+    max-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+.boxpost:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.kategori {
+    background-color: #005d8b;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: small;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.time {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #797b7c;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.judul {
+    font-size: 15pt;
+    font-weight: 500;
+    margin: 40px 0 10px 0; /* Added top margin to avoid overlap */
+}
+.author {
+    color: #005d8b;
+    margin-top: -10px;
+}
+.read {
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    color: #005d8b;
+}
+.read:hover {
+    text-decoration: underline;
+}
