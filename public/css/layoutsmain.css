@@ -186,11 +186,16 @@ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Menambahkan t
 
 
 /* STYLE NAVBAR */
+.nav-link.login-btn{
+  color: #ffffff;
+}
+
 
 .nav-link.login-btn:hover {
   /* box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2); */
   text-decoration: none;
   transform: translateX(3px);
+  color: #ffffff;
 }
 .navbar{
   background-color: #01658d;

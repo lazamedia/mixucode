@@ -93,9 +93,9 @@
                 </ul>
             </li>
             @else
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a href="/login" class="nav-link login-btn {{ ($active === 'login') ? 'active' : '' }}" aria-label="Login"><i class="bi bi-box-arrow-in-right"></i> Login</a>
-            </li>
+            </li> --}}
             @endauth
         </div>
     </div>
