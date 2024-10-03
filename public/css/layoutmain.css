@@ -331,14 +331,9 @@ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Menambahkan t
       color: #ffffff;
       text-align: center;
       justify-content: center;
-      border: 1px solid #ffffff;
+      border: 1px solid #ffffff !important;
       margin-bottom: 20px;
       background-color: transparent;
-  }
-
-  .project-btn:hover {
-      background-color: #ffffff;
-      color: #01658d;
   }
 }
 
