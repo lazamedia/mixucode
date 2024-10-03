@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Halaman Utama -->
+   <url>
+      <loc>https://mixucode.my.id/</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- Halaman FAQ -->
+   <url>
+      <loc>https://mixucode.my.id/faq</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Halaman Project -->
+   <url>
+      <loc>https://mixucode.my.id/project</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <!-- Halaman Partner -->
+   <url>
+      <loc>https://mixucode.my.id/partner</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Halaman Test -->
+   <url>
+      <loc>https://mixucode.my.id/test</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+   </url>
+
+   <!-- Halaman Portofolio -->
+   <url>
+      <loc>https://mixucode.my.id/portofolio</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Halaman Klien Kami -->
+   <url>
+      <loc>https://mixucode.my.id/klien</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Halaman Kontak -->
+   <url>
+      <loc>https://mixucode.my.id/contact</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+   </url>
+
+   <!-- Halaman Login (Tidak perlu diindeks) -->
+   <url>
+      <loc>https://mixucode.my.id/login</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.1</priority>
+   </url>
+
+   <!-- Halaman Dashboard (Khusus untuk admin) -->
+   <url>
+      <loc>https://mixucode.my.id/dashboard</loc>
+      <lastmod>2024-10-03</lastmod>
+      <changefreq>never</changefreq>
+      <priority>0.1</priority>
+   </url>
+</urlset>
