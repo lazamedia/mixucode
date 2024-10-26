@@ -58,11 +58,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open Info Menu">
-                            Info
+                            Demo Web
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="infoDropdown">
-                            <li><a class="dropdown-item" href="/portofolio" aria-label="View Portofolio">Portofolio</a></li>
-                            <li><a class="dropdown-item" href="/klien" aria-label="View Our Clients">Klien Kami</a></li>
+                            <li><a class="dropdown-item" href="https://selora.mixucode.my.id/" target="_blank" aria-label="View Portofolio">Selora</a></li>
+                            <li><a class="dropdown-item" href="https://ipnu-ippnu.mixucode.my.id/" target="_blank" aria-label="View Our Clients">Advisor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -98,8 +98,8 @@
                         </li>
                     @else
                         <li class="nav-item">
-                            <a href="/project" class="nav-link project-btn {{ $active === 'project' ? 'active' : '' }}"
-                                aria-label="project">Dokumentasi</a>
+                            <a href="/portofolio" class="nav-link project-btn {{ $active === 'portofolio' ? 'active' : '' }}"
+                                aria-label="project">Portofolio</a>
                         </li>
                     @endauth
                 </ul>

@@ -271,18 +271,24 @@
 .box-pesanan {
     width: 19%; 
     border: 1px solid #dddada;
-    border-radius: 10px 0px 10px 0px;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+    overflow: hidden;
 }
 
 .box-pesanan:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
+.demo {
+    background-color: #2b3a50;
+    width: 100%;
+}
 .box-pesanan img {
-    width: 100px;
-    margin: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {

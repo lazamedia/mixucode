@@ -44,7 +44,12 @@ Route::get('/klien', function () {
         "active" => "klien"
     ]);
 });
-
+Route::get('/about', function () {
+    return view('about',[
+        "title" => "about",
+        "active" => "about"
+    ]);
+});
 Route::get('/project', function () {
     return view('project',[
         "title" => "project",

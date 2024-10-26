@@ -69,6 +69,7 @@
         background-color: #e9ecef;
     }
 
+
     .accordion-item-body {
         max-height: 0;
         overflow: hidden;

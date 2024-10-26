@@ -2,11 +2,11 @@
 
 @section('container')
 
-
+<link rel="stylesheet" href="{{ asset('css/homenew.css') }}">
 
 <style>
-</style>
 
+</style>
 
 {{-- Main Content --}}
 
@@ -168,31 +168,10 @@
         
         <div class="c-pesanan">
 
-            <div class="box-pesanan">
-                <img src="{{ asset('img/404.png') }}" alt="">
-                <h5>Pesanan 1 </h5>
-                <p>Pesanan dibuat secara online.</p>
-            </div>
-            <div class="box-pesanan">
-                <img src="{{ asset('img/404.png') }}" alt="">
-                <h5>Pesanan 2 </h5>
-                <p>Pesanan dibuat secara online.</p>
-            </div>
-            <div class="box-pesanan">
-                <img src="{{ asset('img/404.png') }}" alt="">
-                <h5>Pesanan 3 </h5>
-                <p>Pesanan dibuat secara online.</p>
-            </div>
-            <div class="box-pesanan">
-                <img src="{{ asset('img/404.png') }}" alt="">
-                <h5>Pesanan 4 </h5>
-                <p>Pesanan dibuat secara online.</p>
-            </div>
-            <div class="box-pesanan">
-                <img src="{{ asset('img/404.png') }}" alt="">
-                <h5>Pesanan 5 </h5>
-                <p>Pesanan dibuat secara online.</p>
-            </div>
+            <a href="" class="box-pesanan">
+                <img src="{{ asset('img/s-1.jpg') }}" alt="">
+                <p>Website Organisasi</p>
+            </a>
 
         </div>
     </div>
