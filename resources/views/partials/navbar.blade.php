@@ -58,11 +58,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="infoDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false" aria-label="Open Info Menu">
-                            Demo Web
+                            Demo Website
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="infoDropdown">
-                            <li><a class="dropdown-item" href="https://selora.mixucode.my.id/" target="_blank" aria-label="View Portofolio">Selora</a></li>
-                            <li><a class="dropdown-item" href="https://ipnu-ippnu.mixucode.my.id/" target="_blank" aria-label="View Our Clients">Advisor</a></li>
+                            <li><a class="dropdown-item" href="https://selora.mixucode.my.id" target="_blank" aria-label="View Portofolio">Selora</a></li>
+                            <li><a class="dropdown-item" href="https://ipnu-ippnu.mixucode.my.id" target="_blank" aria-label="View Our Clients">Advisor</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
