@@ -34,10 +34,10 @@
                         <a class="nav-link {{ $active === 'faq' ? 'active' : '' }}" href="/faq"
                             aria-label="Go to FAQ">Faq</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link {{ $active === 'project' ? 'active' : '' }}" href="/project"
                             aria-label="Go to Project">Project</a>
-                    </li>
+                    </li> --}}
 
                     @if (auth()->check() && auth()->user()->hasRole('admin'))
                         <li class="nav-item">
@@ -49,10 +49,10 @@
                         <a class="nav-link {{ $active === 'partner' ? 'active' : '' }}" href="/partner"
                             aria-label="Go to Partner">Partner</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link {{ $active === 'test' ? 'active' : '' }}" href="/test"
                             aria-label="Go to Test">Test</a>
-                    </li>
+                    </li> --}}
 
                     <!-- Dropdown Menu for Info Section -->
                     <li class="nav-item dropdown">
@@ -63,6 +63,8 @@
                         <ul class="dropdown-menu" aria-labelledby="infoDropdown">
                             <li><a class="dropdown-item" href="https://selora.mixucode.my.id" target="_blank" aria-label="View Portofolio">Selora</a></li>
                             <li><a class="dropdown-item" href="https://ipnu-ippnu.mixucode.my.id" target="_blank" aria-label="View Our Clients">Advisor</a></li>
+                            <li><a class="dropdown-item" href="https://lp01.mixucode.my.id" target="_blank" aria-label="View Our Clients">Flavorbox</a></li>
+
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
