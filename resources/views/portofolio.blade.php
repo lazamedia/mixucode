@@ -79,6 +79,7 @@
     @media (max-width: 768px) {
         .project-box {
             width: 45%;
+            margin-top: 10px;
         }
     }
 
@@ -136,7 +137,7 @@
             <div class="label-box">
                 <p>Web Ecomerce</p>
             </div>
-            <img src="{{ asset('img/demo-Selora.png ') }}" alt="Project 1">
+            <img src="{{ asset('img/demo-selora.png ') }}" alt="Project 1">
             <div class="overlay">
                 <a href="https://selora.mixucode.my.id" target="_blank">View Demo</a>
             </div>
