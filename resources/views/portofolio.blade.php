@@ -15,6 +15,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        margin-bottom: 80px;
     }
 
     .project-box {
@@ -166,6 +167,29 @@
 
         <!-- Tambahkan lebih banyak project-box sesuai kebutuhan -->
     </div>
+
+    <div class="page-title">
+        <h1 ><font style="color: #0a85b6">Coming Soon </font> Project</h1>
+        <p>Project yang akan datang.</p>
+    </div>
+
+    <div class="projects-container">
+        <!-- Contoh Project Box -->
+        
+        <div class="project-box">
+            <div class="label-box">
+                <p>ProjectVault</p>
+            </div>
+            <img src="{{ asset('img/demo-saveproject.png ') }}" alt="Project 1">
+            <div class="overlay">
+                <a href="https://cyber.mixucode.my.id" target="_blank">View Demo</a>
+            </div>
+
+        </div>
+
+        <!-- Tambahkan lebih banyak project-box sesuai kebutuhan -->
+    </div>
+
 </div>
 
 @endsection
