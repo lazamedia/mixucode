@@ -46,7 +46,7 @@
     <style>
         @media (max-width: 768px) {
             .main-content{
-                padding: 80px 0px;
+                /* padding: 80px 0px; */
                 box-sizing: border-box;
         }
         }
