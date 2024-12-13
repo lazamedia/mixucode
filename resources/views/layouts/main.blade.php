@@ -37,12 +37,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/layoutmain.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/layoutsmain.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/js/bootstrap.min.js') }}">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .main-content{
+                padding: 80px 0px;
+                box-sizing: border-box;
+        }
+        }
+    </style>
 </head>
 
 <body class="body--no-scroll">
@@ -51,7 +59,7 @@
     @include('partials.navbar')
 
     <!-- Main Content -->
-    <div id="main-content">
+    <div id="main-content mt-5">
         @yield('container')
 
         {{-- Tampilkan hanya pada halaman home dan faq --}}

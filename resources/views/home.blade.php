@@ -46,6 +46,20 @@
         width: 600px;
         margin: auto;
     }
+    @media (max-width: 768px) {
+        .c-hero{
+            flex-direction: column-reverse;
+            padding: 30px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+        .b-hero-right img{
+            width: 100%;
+        }
+        .l-50{
+            width: 100%;
+        }
+    }
 
 /* PELAYANAN KAMI*/
 .c-pelayanan{
