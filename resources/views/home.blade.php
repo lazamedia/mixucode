@@ -38,6 +38,7 @@
     }
     .l-50{
         width: 50%;
+        margin: auto;
     }
     .b-hero-left{
         padding-right: 50px; 
@@ -52,12 +53,14 @@
             padding: 30px;
             margin-bottom: 50px;
             background-color: #19e567;
+            align-content: center;
         }
         .b-hero-right img{
             width: 100%;
         }
         .l-50{
             width: 100%;
+            background-color: #E55B19;
         }
     }
 
