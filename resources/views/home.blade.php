@@ -52,7 +52,6 @@
             flex-direction: column-reverse;
             padding: 30px;
             margin-bottom: 50px;
-            background-color: #19e567;
             align-content: center;
         }
         .b-hero-right img{
@@ -60,7 +59,6 @@
         }
         .l-50{
             width: 100%;
-            background-color: #E55B19;
         }
     }
 
