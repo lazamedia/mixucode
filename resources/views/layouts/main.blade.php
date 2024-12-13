@@ -59,7 +59,7 @@
     @include('partials.navbar')
 
     <!-- Main Content -->
-    <div id="main-content mt-5">
+    <div id="main-content">
         @yield('container')
 
         {{-- Tampilkan hanya pada halaman home dan faq --}}
