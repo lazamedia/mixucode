@@ -50,7 +50,6 @@
         .c-hero{
             flex-direction: column-reverse;
             padding: 30px;
-            margin-top: 80px;
             margin-bottom: 50px;
         }
         .b-hero-right img{
