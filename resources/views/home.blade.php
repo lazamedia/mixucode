@@ -51,6 +51,7 @@
             flex-direction: column-reverse;
             padding: 30px;
             margin-bottom: 50px;
+            background-color: #19e567;
         }
         .b-hero-right img{
             width: 100%;
