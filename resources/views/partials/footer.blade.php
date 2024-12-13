@@ -11,6 +11,12 @@
         width: auto;
         height: 25px;
     }
+    @media (max-width: 768px){
+        .box-payment {
+            justify-content: center;
+            text-align: center;
+        }
+    }
 </style>
 <footer>
     <div class="footer">
@@ -56,9 +62,10 @@
                 <img src="{{ asset('img/bsi.png') }}" alt="">
             </div>
         </div>
+        <div class="copyright-section">
+            &copy; MIXUCODE  ||   Elegant and Modern Web Design.
+        </div>
     </div>
 
-    <div class="copyright-section">
-        &copy; MIXUCODE  ||   Elegant and Modern Web Design.
-    </div>
+
 </footer>

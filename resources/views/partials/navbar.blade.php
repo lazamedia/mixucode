@@ -4,8 +4,17 @@
     </style>
 
     <!-- MINI NAVBAR -->
-    <nav class="mini-navbar">
+    <nav class="mini-navbar ">
         <p>Mixucode - Jasa Pembuatan Website Termurah</p>
+        <div class="nav-sosmed">
+            <ul class="nav-icons">
+                <li><a href="https://wa.me/6282134749670" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                {{-- <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li> --}}
+                <li><a href="https://www.instagram.com/lazz_mxt/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto:lazamediamxt@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- MAIN NAVBAR -->
@@ -24,8 +33,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 30px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
                     <li class="nav-item">
                         <a class="nav-link {{ $active === 'home' ? 'active' : '' }}" href="/"
                             aria-label="Go to Home">Home</a>
@@ -34,10 +43,6 @@
                         <a class="nav-link {{ $active === 'faq' ? 'active' : '' }}" href="/faq"
                             aria-label="Go to FAQ">Faq</a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link {{ $active === 'project' ? 'active' : '' }}" href="/project"
-                            aria-label="Go to Project">Project</a>
-                    </li> --}}
 
                     @if (auth()->check() && auth()->user()->hasRole('admin'))
                         <li class="nav-item">
@@ -100,8 +105,8 @@
                         </li>
                     @else
                         <li class="nav-item">
-                            <a href="/portofolio" class="nav-link project-btn {{ $active === 'portofolio' ? 'active' : '' }}"
-                                aria-label="project">Portofolio</a>
+                            <a href="/portofolio" class="nav-link {{ $active === 'portofolio' ? 'active' : '' }}"
+                                aria-label="project"><i class="bi bi-box-arrow-in-right"></i> Login</a>
                         </li>
                     @endauth
                 </ul>

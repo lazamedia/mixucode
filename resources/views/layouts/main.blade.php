@@ -10,6 +10,9 @@
     <meta name="description" content="Mixucode - Jasa pembuatan website termurah dan terpercaya di Indonesia. Dapatkan layanan profesional untuk membangun website impian Anda bersama Lazuardi Mandegar.">
     <meta name="keywords" content="jasa pembuatan website, pembuatan website murah, jasa website, website profesional, Lazuardi Mandegar, Mixucode">
     <meta name="author" content="Lazuardi Mandegar">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mixucode.my.id" />
     
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="Mixucode - Jasa Pembuatan Website Termurah">
@@ -23,14 +26,6 @@
     <meta name="twitter:title" content="Mixucode - Jasa Pembuatan Website Termurah">
     <meta name="twitter:description" content="Layanan profesional pembuatan website murah bersama Lazuardi Mandegar.">
     <meta name="twitter:image" content="https://mixucode.my.id/assets/images/logo.jpg">
-
-    <!-- Cache Control -->
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta name="referrer" content="no-referrer">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Page Title -->
     <title>MIXUCODE {{ isset($title) ? ' - ' . htmlspecialchars($title, ENT_QUOTES, 'UTF-8') : '' }}</title>
