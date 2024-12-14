@@ -73,7 +73,7 @@
   list-style-type: none;
   padding-left: 0;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .footer .social-icons li {
@@ -82,7 +82,7 @@
 
 .footer .social-icons li a {
 color: #ffffff;
-font-size: 1.5rem;
+font-size: 1.2rem;
 display: inline-block; /* Pastikan elemen dapat ditransformasi */
 transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -268,7 +268,7 @@ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Menambahkan t
 /* NAVBAR */
 .navbar {
   background-color: #ffffff;
-  border-bottom: 1px solid #e55a1979;
+  border-bottom: 1px solid #e55a194f;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.3s ease;
 }

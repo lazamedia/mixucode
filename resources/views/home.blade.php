@@ -20,6 +20,12 @@
         color: #E55B19;
         box-shadow: 0 0 10px #e55a196c;
     }
+    .rows{
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
 /* HERO */
     .c-hero{
         display: flex;
@@ -63,11 +69,116 @@
     }
 
 /* PELAYANAN KAMI*/
-.c-pelayanan{
-    height: 85vh;
-    justify-content: center;
-    text-align: center; 
-}
+    .c-pelayanan{
+        height: 85vh;
+        justify-content: center;
+        text-align: center; 
+        padding: 20px;
+    }
+    .c-b-pelayanan{
+        display: flex;
+        padding: 30px;
+        gap: 20px;
+        justify-content: center;
+    }
+    .b-pelayanan{
+        width: 100%;
+        max-width: 280px;
+        border: 1px solid #dbdbdb;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+        border-radius: 10px;
+    }
+    .i-pelayanan{
+        background-color: #E55B19;
+        width: 65px;
+        border-radius: 10px 0px 10px 0px;
+        padding: 10px;
+    }
+    .b-pelayanan:nth-child(1) .i-pelayanan {
+    background-color: #FF5733; 
+    }
+
+    .b-pelayanan:nth-child(2) .i-pelayanan {
+        background-color: #3498db; 
+    }
+
+    .b-pelayanan:nth-child(3) .i-pelayanan {
+        background-color: #f1c40f; 
+    }
+
+    .b-pelayanan:nth-child(4) .i-pelayanan {
+        background-color: #9b59b6; 
+    }
+    .i-pelayanan i {
+        color: #ffffff;
+    }
+    .desc-pelayanan{
+        margin-top: 7px;
+        padding: 15px;
+        text-align: left;
+    }
+    .desc-pelayanan p{
+        font-size: 14px;
+    }
+    @media (max-width : 780px) {
+        .c-pelayanan{
+            height: auto;
+        }
+        .c-b-pelayanan{
+            flex-direction: column;
+            padding: 0px;
+        }
+        .b-pelayanan{
+            max-width: 100%;
+        }
+    }
+
+/* Order */
+    .c-order{
+        background-color: #FCEDE6;
+        width: 100%;
+        display: flex;
+        padding: 50px;
+    }
+    .b-order-left img{
+        width: 80%;
+        max-width: 400px;
+        margin: auto;
+    }
+    .number-order{
+        text-align: center;
+        align-content: center;
+        background-color: #E55B19;
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin: 10px;   
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+    }
+    .desc-order{
+        align-content: center;
+    }
+    .desc-order p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .desc-order h5{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .card-order{
+        margin-bottom: 30px;
+    }
+    @media (max-width : 780px) {
+        .c-order{
+            height: auto;
+            flex-direction: column;
+            padding: 30px;      
+        }
+    }
 </style>
 
 <section class="c-hero">
@@ -95,9 +206,103 @@
         <p>perluas jangkauan pasar, dan tingkatkan efisiensi bisnis anda melalui website</p>
     </div>
     <div class="c-b-pelayanan">
-        <div class="b-pelayanan">
 
+        <div class="b-pelayanan">
+            <div class="i-pelayanan">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="desc-pelayanan">
+                <h5>Optimasi SEO</h5>
+                <p>
+                    Tingkatkan peringkat website Anda di mesin pencari dengan teknik SEO yang efektif, agar lebih mudah ditemukan oleh calon pelanggan.
+                </p>
+            </div>
+        </div>
+        <div class="b-pelayanan">
+            <div class="i-pelayanan">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="desc-pelayanan">
+                <h5>Optimasi SEO</h5>
+                <p>
+                    Tingkatkan peringkat website Anda di mesin pencari dengan teknik SEO yang efektif, agar lebih mudah ditemukan oleh calon pelanggan.
+                </p>
+            </div>
+        </div>
+        <div class="b-pelayanan">
+            <div class="i-pelayanan">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="desc-pelayanan">
+                <h5>Optimasi SEO</h5>
+                <p>
+                    Tingkatkan peringkat website Anda di mesin pencari dengan teknik SEO yang efektif, agar lebih mudah ditemukan oleh calon pelanggan.
+                </p>
+            </div>
+        </div>
+        <div class="b-pelayanan">
+            <div class="i-pelayanan">
+                <i class="fa fa-lock"></i>
+            </div>
+            <div class="desc-pelayanan">
+                <h5>Optimasi SEO</h5>
+                <p>
+                    Tingkatkan peringkat website Anda di mesin pencari dengan teknik SEO yang efektif, agar lebih mudah ditemukan oleh calon pelanggan.
+                </p>
+            </div>
         </div>
     </div>
 </section>
+
+<section class="c-order">
+    <div class="b-order-left l-50 text-center">
+        <img src="{{ asset('img/browser.png') }}" alt="" style="margin: auto">
+    </div>
+    <div class="b-order-right l-50">
+        <h2>Solusi <font class="color">Terbaik</font> </h2>
+        <p>
+            Setiap bisnis memiliki tantangan dan tujuan yang berbeda. bantu kami memahami kebutuhan Anda, agar solusi yang kami tawarkan tepat dan efektif.
+        </p>
+        <div class="card-order">
+            <div class="rows mt-4">
+                <div class="number-order">1</div>
+                <div class="desc-order">
+                    <h5>Hubungi Kami</h5>
+                    <p>
+                        Hubungi kami sekarang untuk info lebih lanjut
+                    </p>
+                </div>
+            </div>
+            <div class="rows mt-3">
+                <div class="number-order">2</div>
+                <div class="desc-order">
+                    <h5>Hubungi Kami</h5>
+                    <p>
+                        Hubungi kami sekarang untuk info lebih lanjut
+                    </p>
+                </div>
+            </div>
+            <div class="rows mt-3">
+                <div class="number-order">3</div>
+                <div class="desc-order">
+                    <h5>Hubungi Kami</h5>
+                    <p>
+                        Hubungi kami sekarang untuk info lebih lanjut
+                    </p>
+                </div>
+            </div>
+            <div class="rows mt-3">
+                <div class="number-order">4</div>
+                <div class="desc-order">
+                    <h5>Hubungi Kami</h5>
+                    <p>
+                        Hubungi kami sekarang untuk info lebih lanjut
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn-1">Hubungi Kami</a>
+    </div>
+</section>
+
 @endsection
