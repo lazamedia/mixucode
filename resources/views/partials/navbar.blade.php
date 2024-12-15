@@ -34,7 +34,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 30px;">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" >
                     <li class="nav-item">
                         <a class="nav-link {{ $active === 'home' ? 'active' : '' }}" href="/"
                             aria-label="Go to Home">Home</a>

@@ -14,6 +14,8 @@
         border-radius: 5px;
         text-decoration: none;
         transition: all 0.3s ease;
+        margin-top: 20px;
+        box-sizing: border-box;
     }
     .btn-1:hover{
         background-color: #ffffff;
@@ -179,6 +181,76 @@
             padding: 30px;      
         }
     }
+
+/* Content */
+.c-content-1 {
+    display: flex;
+    padding: 60px;
+    margin-top: 20px;
+    font-size: 11pt;
+}
+
+.c-content-1 h3 {
+    font-weight: 600;
+}
+.c-content-1 p {
+    font-size: 11pt;
+}
+.boxx{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+}
+
+.box-r-content {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.box-r-content img {
+    width: 300px;
+    height: auto;
+    margin: auto;       
+}
+
+
+.box-keunggulan{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    gap: 20px;
+    margin: 10px;
+}
+.box-keunggulan ul, li {
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .c-content-1 {
+        display: flex;
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+    .boxx{
+        width: 100%;
+    }
+    .box-r-content img {
+        width: 300px;
+    }
+    .box-keunggulan {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.box-keunggulan ul li i {
+        color: #E55B19;
+        margin-right: 10px; 
+    }
+
 </style>
 
 <section class="c-hero">
@@ -276,27 +348,27 @@
             <div class="rows mt-3">
                 <div class="number-order">2</div>
                 <div class="desc-order">
-                    <h5>Hubungi Kami</h5>
+                    <h5>Konsultasi</h5>
                     <p>
-                        Hubungi kami sekarang untuk info lebih lanjut
+                        Konsultasi gratis untuk kebutuhan bisnis Anda.
                     </p>
                 </div>
             </div>
             <div class="rows mt-3">
                 <div class="number-order">3</div>
                 <div class="desc-order">
-                    <h5>Hubungi Kami</h5>
+                    <h5>Order layanan</h5>
                     <p>
-                        Hubungi kami sekarang untuk info lebih lanjut
+                        Siap untuk memulai? Pesan layanan kami sekarang!
                     </p>
                 </div>
             </div>
             <div class="rows mt-3">
                 <div class="number-order">4</div>
                 <div class="desc-order">
-                    <h5>Hubungi Kami</h5>
+                    <h5>Payment</h5>
                     <p>
-                        Hubungi kami sekarang untuk info lebih lanjut
+                        Proses pembayaran mudah dan aman
                     </p>
                 </div>
             </div>
@@ -304,5 +376,34 @@
         <a href="#" class="btn-1">Hubungi Kami</a>
     </div>
 </section>
+
+<div class="c-content-1">
+    <div class="box-l-content boxx">
+        <h3>Jangkau Lebih <font class="color">Banyak Customer</font> </h3>
+        <p>Keunggulan membuat website</p>
+        <div class="box-keunggulan">
+            <div class="keunggulan-kiri">
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Meningkatkan Kredibilitas</li>
+                    <li><i class="fas fa-check-circle"></i> Mudah diakses 24/7</li>
+                    <li><i class="fas fa-check-circle"></i> Memperluar jangkauan pasar</li>
+                </ul>
+            </div>
+            <div class="keunggulan-kanan">
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Mempromosikan Portofolio</li>
+                    <li><i class="fas fa-check-circle"></i> Tampil unik & beda</li>
+                    <li><i class="fas fa-check-circle"></i> Efisiensi & Otomatisasi</li>
+                </ul>
+            </div>
+        </div>
+        <p>Buat website impianmu sekarang agar mudah diakses oleh siapapun</p>
+        {{-- <a href="" class="btn-1">Hubungi Kami</a> --}}
+
+    </div>
+    <div class="box-r-content boxx">
+        <img src="{{ asset('img/show.png') }}" alt="">
+    </div>
+</div>
 
 @endsection
