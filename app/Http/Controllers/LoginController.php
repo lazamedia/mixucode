@@ -78,7 +78,7 @@ class LoginController extends Controller
             RateLimiter::clear($attemptsKey); // Bersihkan percobaan login
             RateLimiter::clear($blockKey); // Bersihkan blokir jika ada
     
-            return redirect()->intended('/user');
+            return redirect()->intended('/');
         }
     
         // Autentikasi gagal
@@ -121,7 +121,7 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/');
     }
 
     /**

@@ -138,7 +138,7 @@
             <div class="label-box">
                 <p>Web Ecomerce</p>
             </div>
-            <img src="{{ asset('img/demo-selora.png ') }}" alt="Project 1">
+            <img src="{{ asset('img/demo-selora.jpg ') }}" alt="Project 1">
             <div class="overlay">
                 <a href="https://selora.mixucode.my.id" target="_blank">View Demo</a>
             </div>
@@ -149,7 +149,7 @@
             <div class="label-box">
                 <p>Web Organisasi</p>
             </div>
-            <img src="{{ asset('img/demo-advisor.png    ') }}" alt="Project 2">
+            <img src="{{ asset('img/demo-advisor.jpg    ') }}" alt="Project 2">
             <div class="overlay">
                 <a href="https://ipnu-ippnu.mixucode.my.id" target="_blank">View Demo</a>
             </div>
@@ -159,12 +159,21 @@
             <div class="label-box">
                 <p>Web Resto</p>
             </div>
-            <img src="{{ asset('img/demo-flavor.png ') }}" alt="Project 3">
+            <img src="{{ asset('img/demo-flavor.jpg ') }}" alt="Project 3">
             <div class="overlay">
                 <a href="https://lp01.mixucode.my.id" target="_blank">View Demo</a>
             </div>
         </div>
 
+        <div class="project-box">
+            <div class="label-box">
+                <p>ProjectVault</p>
+            </div>
+            <img src="{{ asset('img/demo-saveproject.jpg ') }}" alt="Project 1">
+            <div class="overlay">
+                <a href="https://cyber.mixucode.my.id" target="_blank">View Demo</a>
+            </div>
+        </div>
         <!-- Tambahkan lebih banyak project-box sesuai kebutuhan -->
     </div>
 
@@ -180,7 +189,7 @@
             <div class="label-box">
                 <p>ProjectVault</p>
             </div>
-            <img src="{{ asset('img/demo-saveproject.png ') }}" alt="Project 1">
+            <img src="{{ asset('img/demo-saveproject.jpg ') }}" alt="Project 1">
             <div class="overlay">
                 <a href="https://cyber.mixucode.my.id" target="_blank">View Demo</a>
             </div>

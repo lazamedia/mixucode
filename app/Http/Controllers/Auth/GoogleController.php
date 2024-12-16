@@ -29,39 +29,37 @@ class GoogleController extends Controller
     public function handleGoogleCallback()
     {
         try {
-            // Ambil data pengguna dari Google
+            
             $googleUser = Socialite::driver('google')->stateless()->user();
 
-            // Cek apakah pengguna sudah ada berdasarkan google_id
             $user = User::where('google_id', $googleUser->getId())->first();
 
             if ($user) {
-                // Jika pengguna ditemukan, login
                 Auth::login($user);
-                return redirect()->intended('/'); // Ganti dengan rute yang sesuai
+                return redirect()->intended('/'); 
             } else {
-                // Cek apakah email sudah ada
+
                 $existingUser = User::where('email', $googleUser->getEmail())->first();
                 if ($existingUser) {
-                    // Jika email sudah ada, tambahkan google_id dan avatar, lalu login
+
                     $existingUser->update([
                         'google_id' => $googleUser->getId(),
-                        'avatar' => $googleUser->getAvatar(), // Menyimpan URL foto profil
+                        'avatar' => $googleUser->getAvatar(), 
                     ]);
                     Auth::login($existingUser);
-                    return redirect()->intended('/'); // Ganti dengan rute yang sesuai
+                    return redirect()->intended('/'); 
                 } else {
-                    // Jika pengguna dan email belum ada, buat akun baru
+
                     $newUser = User::create([
                         'name' => $googleUser->getName(),
                         'email' => $googleUser->getEmail(),
                         'google_id' => $googleUser->getId(),
-                        'avatar' => $googleUser->getAvatar(), // Menyimpan URL foto profil
-                        'password' => Hash::make(uniqid()), // Atur password acak
+                        'avatar' => $googleUser->getAvatar(), 
+                        'password' => Hash::make(uniqid()), 
                     ]);
 
                     Auth::login($newUser);
-                    return redirect()->intended('/'); // Ganti dengan rute yang sesuai
+                    return redirect()->intended('/'); 
                 }
             }
         } catch (\Exception $e) {

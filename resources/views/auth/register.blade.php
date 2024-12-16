@@ -162,7 +162,7 @@
     @media (max-width: 480px) {
       .register-box {
         padding: 30px;
-        width: 90%; /* Mengisi 90% dari lebar layar */
+        width: 95%; /* Mengisi 90% dari lebar layar */
       }
       h2 {
         font-size: 20px;

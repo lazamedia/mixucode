@@ -176,7 +176,7 @@
         @media (max-width: 480px) {
             .login-box {
                 padding: 30px;
-                width: 90%;
+                width: 95%;
                 /* Mengisi 90% dari lebar layar */
             }
 
@@ -249,19 +249,21 @@
             <button id="login-btn" class="btn" type="submit"
                 {{ session()->has('retryAfter') ? 'disabled' : '' }}>Login</button>
         </form>
+        <a href="{{ route('auth.google') }}"
+        class="btn btn-outline-primary w-100 mt-3 d-flex align-items-center justify-content-center">
+        <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
+            alt="Google Logo" width="20" class="me-2">
+        Login dengan Google
+    </a>
         @if (session()->has('retryAfter'))
             <div class="countdown-box" id="countdown-box">
                 Coba lagi dalam {{ session('retryAfter') }} detik
             </div>
         @endif
         <p>Belum punya akun? <a href="/register">Daftar</a></p>
-        <a href="{{ route('auth.google') }}"
-            class="btn btn-outline-primary w-100 mt-3 d-flex align-items-center justify-content-center">
-            <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png"
-                alt="Google Logo" width="20" class="me-2">
-            Login dengan Google
-        </a>
-        <a href="/" class="back-btn">Kembali ke Beranda</a>
+        <p><a href="/">Back Home</a></p>
+
+        {{-- <a href="/" class="back-btn">Kembali ke Beranda</a> --}}
     </div>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
