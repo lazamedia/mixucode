@@ -268,7 +268,7 @@ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Menambahkan t
 /* NAVBAR */
 .navbar {
   background-color: #ffffff;
-  border-bottom: 1px solid #e55a194f;
+  border-bottom: 1px solid #e55a1979;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.3s ease;
 }
@@ -279,16 +279,17 @@ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Menambahkan t
   color: #333;
 }
 
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #E55B19;
+}
+
 .navbar-dark .navbar-nav .nav-link.active {
   color: #E55B19;
   font-weight: 600;
 
 }
 
-/* Gaya untuk link pada navbar saat di-hover */
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #E55B19;
-}
+
 
 /* DROPDOWN MENU */
 .nav-item.dropdown {
@@ -435,7 +436,6 @@ transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Menambahkan t
 .navbar.scrolled .dropdown-item:hover,
 .navbar.scrolled .nav-link.active {
   color: #E55B19 ;
-  font-weight: 600;
 }
 
 .navbar.scrolled .project-btn {

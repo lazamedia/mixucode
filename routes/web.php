@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -71,8 +72,23 @@ Route::get('/portofolio', function () {
     ]);
 });
 
+Route::get('/register', function () {
+    return view('auth.register',[
+        "title" => "register",
+        "active" => "register"
+    ]);
+});
+
 // LOGIN LOGUOT
 Route::get('/login', [LoginController::class, 'index' ] )->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate' ] );
 Route::post('/logout', [LoginController::class, 'logout' ] );
 
+Route::post('/register', [RegisterController::class, 'register'])->name('register');
+
+
+
+use App\Http\Controllers\Auth\GoogleController;
+
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);

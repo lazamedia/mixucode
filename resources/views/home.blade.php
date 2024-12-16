@@ -183,73 +183,73 @@
     }
 
 /* Content */
-.c-content-1 {
-    display: flex;
-    padding: 60px;
-    margin-top: 20px;
-    font-size: 11pt;
-}
-
-.c-content-1 h3 {
-    font-weight: 600;
-}
-.c-content-1 p {
-    font-size: 11pt;
-}
-.boxx{
-    width: 50%;
-    padding: 20px;
-    margin: auto;
-}
-
-.box-r-content {
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-}
-
-.box-r-content img {
-    width: 300px;
-    height: auto;
-    margin: auto;       
-}
-
-
-.box-keunggulan{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    text-align: left;
-    gap: 20px;
-    margin: 10px;
-}
-.box-keunggulan ul, li {
-    list-style-type: none;
-    margin-top: 16px;
-}
-
-@media (max-width: 768px) {
     .c-content-1 {
         display: flex;
-        padding: 20px;
-        flex-direction: column-reverse;
+        padding: 60px;
+        margin-top: 20px;
+        font-size: 11pt;
+    }
+
+    .c-content-1 h3 {
+        font-weight: 600;
+    }
+    .c-content-1 p {
+        font-size: 11pt;
     }
     .boxx{
-        width: 100%;
+        width: 50%;
+        padding: 20px;
+        margin: auto;
     }
+
+    .box-r-content {
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+
     .box-r-content img {
         width: 300px;
+        height: auto;
+        margin: auto;       
     }
-    .box-keunggulan {
+
+
+    .box-keunggulan{
         display: flex;
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        justify-content: left;
+        text-align: left;
+        gap: 20px;
+        margin: 10px;
     }
-}
-.box-keunggulan ul li i {
-        color: #E55B19;
-        margin-right: 10px; 
+    .box-keunggulan ul , .box-keunggulan ul li {
+        list-style-type: none;
+        margin-top: 16px;
     }
+
+    @media (max-width: 768px) {
+        .c-content-1 {
+            display: flex;
+            padding: 20px;
+            flex-direction: column-reverse;
+        }
+        .boxx{
+            width: 100%;
+        }
+        .box-r-content img {
+            width: 300px;
+        }
+        .box-keunggulan {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .box-keunggulan ul li i {
+            color: #E55B19;
+            margin-right: 10px; 
+        }
 
 </style>
 
