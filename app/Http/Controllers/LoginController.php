@@ -78,9 +78,6 @@ class LoginController extends Controller
             RateLimiter::clear($attemptsKey); // Bersihkan percobaan login
             RateLimiter::clear($blockKey); // Bersihkan blokir jika ada
     
-
-            $user->save();
-    
             return redirect()->intended('/user');
         }
     
