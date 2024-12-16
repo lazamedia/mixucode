@@ -163,7 +163,8 @@
         @media (max-width: 768px) {
             .login-box {
                 padding: 30px;
-                max-width: 350px;
+                width: 98%;
+                max-width: 380px;
                 /* Tingkatkan dari 320px menjadi 350px */
             }
 
@@ -176,7 +177,7 @@
         @media (max-width: 480px) {
             .login-box {
                 padding: 30px;
-                width: 95%;
+                width: 98%;
                 /* Mengisi 90% dari lebar layar */
             }
 
